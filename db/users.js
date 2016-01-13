@@ -1,8 +1,9 @@
+    
 var records = [
     { id: 1, uid: "A1234567K", username: 'Kevin', password: 'nm2112', displayName: 'Kevin', emails: [ { value: 'example@gmail.com' } ] }
     , { id: 2, uid: "A1234567KP", username: 'Prashanth', password: 'nm2112', displayName: 'Prashanth', emails: [ { value: 'example@gmail.com' } ] }
 ];
-
+        
 exports.findById = function(id, cb) {
   process.nextTick(function() {
     var idx = id - 1;
@@ -25,3 +26,16 @@ exports.findByUsername = function(username, cb) {
     return cb(null, null);
   });
 }
+
+
+// exports.clickLog = function(username,id) {
+//    process.nextTick(function()){
+//        for (var i = 0, len = records.length; i < len; i++) {
+//            var record = records[i];
+//            if (record.username === username && record.id === id) {
+//                record.click++;
+//                return cb(null, record);
+//            }
+//        }                                           
+//    }                   
+// }
