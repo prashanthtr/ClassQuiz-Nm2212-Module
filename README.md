@@ -19,5 +19,14 @@ Start the server.
 $ node server.js
 ```
 
-Open a web browser and navigate to [http://localhost:3000/](http://127.0.0.1:3000/)
-to see the example in action.  Log in using username `Prashanth` and password `nm2112`.
+Open a web browser and navigate to
+[http://localhost:3000/](http://127.0.0.1:3000/) to see the example in
+action.  Log in using username `Prashanth` and password `nm2112` to
+see the profile. In the profile page, take the sample MCQ quiz. Click
+on each button to see the responses for each of the submit buttons.
+
+
+Things to add:
+
+1) Logging the sequence of clicks for each question 
+2) Integration with org exported html files

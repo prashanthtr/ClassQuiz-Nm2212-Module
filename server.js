@@ -119,7 +119,6 @@ app.post('/submitAns',
          function(req, res){
              console.log(req.body.option);
              console.log(req.body.questionNo);
-
              console.log(qb);
              //questionNumber is array index, option is 1,2,3
              quizResponse = qb.findAns(req.body.questionNo, req.body.option);
